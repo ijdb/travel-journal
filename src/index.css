@@ -1,13 +1,113 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+
+/* Header */
+.headbar {
+  width: 100%;
+  min-height: 50px;
+  background-color: #F55A5A;
+  display: flex;
+  padding: 30px auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Inter';
+}
+
+.globe--img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* card */
+.single--card {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.site--img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.date {
+  margin-bottom: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+  color: #2B283A;
+}
+
+.location--icon {
+  width: 3%;
+}
+
+.content {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+  color: #2B283A;
+}
+
+
+
+.site-name {
+  margin-bottom: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #2B283A;
+}
+
+.location--icon {
+  width: 6%;
+  margin-right: 4px;
+}
+
+.country-con {
+  width: 200px;
+  margin: 8px 0px;
+}
+
+.country {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+
+}
+
+a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918E9B;
+  padding-left: 10px;
 }
